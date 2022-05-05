@@ -23,9 +23,24 @@
     <select id="models" style="display:none" onclick="selectGen(this)" class="select">
 
     </select>
-    <select id="generations" style="display:none" class="select">
+    <select id="generations" onclick="selectBody(this)" style="display:none" class="select">
 
     </select>
+    <select id="bodies" style="display:none" class="select">
+
+
+    </select>
+    <div class="input-group ">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Укажите пробег</span>
+        </div>
+        <input type="text" class="form-control" name="input_text1" id="input_text1" max="100000" value="100000"
+            onchange="rangeinput1.value = input_text1.value" />
+        <input type="range" oninput="input_text1.value = rangeinput1.value" class="form-control-range slider"
+            type="range" min="5000" max="100000" value="100000" id="rangeinput1" step="5000"
+            onchange="input_text1.value = rangeinput1.value">
+    </div>
+
     <script src="task2.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
