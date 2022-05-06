@@ -16,27 +16,7 @@ let Tesla_X=["2015 – 2021","2021"];
 let Tesla_Y=["2020"];
 let Tesla_Roadster=["2008 – 2012","2017"];
 let Tesla_3=["2017","2008 – 2012","2017"];
-let A1firstb=["Хэтчбек 5 дв. Sportback","Хэтчбек 3 дв."];
-let A1secondb=["Хэтчбек 5 дв. Sportback","Хэтчбек 3 дв."];
-let A1thirdb=["Хэтчбек 5 дв. citycarver","Хэтчбек 5 дв."];
-let S7allb=["Лифтбек Sportback"];
-let Q3allb=["Внедорожник 5 дв."];
-let Q8allb=["Внедорожник 5 дв."];
-let ETallb=["Внедорожник 5 дв."];
-let M6firstb=["Купе"];
-let M6secondb=["Купе","Кабриолет"]
-let M6thirsb=["Купе","Кабриолет","Седан Gran Coupe"];
-let X1allb=["Внедорожник 5 дв."];
-let X7allb=["Внедорожник 5 дв."];
-let M8firstb=["Купе","Кабриолет","Седан Gran Coupe"];
-let M8secondb=["Купе","Кабриолет","Седан Gran Coupe"];
-let X2allb=["Внедорожник 5 дв."];
-let Tsallb=["Лифтбек"];
-let Txallb=["Внедорожник 5 дв."];
-let Tyallb=["Внедорожник 5 дв."];
-let TRoadfirstb=["Родстер"];
-let TRoadsecondb=["Тарга"];
-let T3allb=["Седан"];
+
 function selectBrand(sender){
     
     if (sender.options[sender.selectedIndex].value=="none")
@@ -128,15 +108,5 @@ function selectGen(sender){
     }
     document.getElementById("generations").innerHTML=optionString1
 }
-function selectBody(sender){
-    if (sender.options[sender.selectedIndex].value=="none")
-    document.getElementById("bodies").style.display="none";
-    else
-    document.getElementById("bodies").style.display="block";
-    let optionString2="";
-    if (sender.options[sender.selectedIndex].value=="2010 – 2015"){
-        for (let body of A1firstb)
-        optionString2 +=`<option>${body}</option>`;
-    document.getElementById("bodies").innerHTML=optionString2;
-}
-}
+
+
