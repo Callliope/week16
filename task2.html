@@ -14,111 +14,132 @@
 <body>
     <div class="container" id="maincontainer">
         <div class="first row  justify-content-md-left">
-            <div>Выберите бренд автомобиля:</div>
-        </div>
-        <div class="second row  justify-content-md-left">
-            <select id="brands" onchange="selectBrand(this)" class="select">
-                <option id="none" selected disabled hidden value="none">Not selected</option>
-                <option id="audi" value="audi">Audi</option>
-                <option id="bmw" value="bmw">BMW</option>
-                <option id="tesla" value="tesla">Tesla Motors</option>
+            <div class="col order-first">
+                <div>Выберите бренд автомобиля:
 
-            </select>
+                </div>
+
+                <select id="brands" onchange="selectBrand(this)" class="select">
+                    <option id="none" selected disabled hidden value="none">Not selected</option>
+                    <option id="audi" value="audi">Audi</option>
+                    <option id="bmw" value="bmw">BMW</option>
+                    <option id="tesla" value="tesla">Tesla Motors</option>
+
+                </select>
+            </div>
         </div>
+
         <div class="third row  justify-content-md-left">
-            <div>Выберите модель автомобиля:</div>
-        </div>
-        <div class="fourth row  justify-content-md-left">
-            <select id="models" style="display:none" onclick="selectGen(this)" class="select">
+            <div class="col order-first">
+                <div>Выберите модель автомобиля:
 
-            </select>
+                </div>
+
+
+                <select id="models" style="display:none" onclick="selectGen(this)" class="select">
+
+                </select>
+            </div>
         </div>
         <div class="fifth row  justify-content-md-left">
-            <div>Выберите поколение автомобиля:</div>
-        </div>
-        <div class="sixth row  justify-content-md-left gy-5">
-            <select id="generations" style="display:none" class="select">
-        </div>
-        <div class="row justify-content-md-left gy-50 ">
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="body1" checked>
-                <label class="form-check-label" for="body1">
-                    Хэтчбек 5 дв.
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="body2">
-                <label class="form-check-label" for="body2">
-                    Хэтчбек 3 дв.
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="body3">
-                <label class="form-check-label" for="body3">
-                    Хэтчбек 5 дв. citycarver
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="body4">
-                <label class="form-check-label" for="body4">
-                    Хэтчбек 5 дв. Sportback
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="body5">
-                <label class="form-check-label" for="body5">
-                    Лифтбек Sportback
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="body6">
-                <label class="form-check-label" for="body6">
-                    Лифтбек
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="body7">
-                <label class="form-check-label" for="body7">
-                    Внедорожник 5 дв.
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="body8">
-                <label class="form-check-label" for="body8">
-                    Купе
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="body9">
-                <label class="form-check-label" for="body9">
-                    Кабриолет
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="body10">
-                <label class="form-check-label" for="body10">
-                    Седан Gran Coupe
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="body11">
-                <label class="form-check-label" for="body11">
-                    Седан
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="body12">
-                <label class="form-check-label" for="body12">
-                    Родстер
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="body13">
-                <label class="form-check-label" for="body13">
-                    Тарга
-                </label>
+            <div class="col order-first">
+                <div>Выберите поколение автомобиля:</div>
+
+
+                <select id="generations" style="display:none" class="select"></select>
             </div>
         </div>
+        <div class="sixth row justify-content-md-left ">
+            <div class="col sm-9 order-first">
+                Выберите тип кузова :
+
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body1" checked>
+                    <label class="form-check-label" for="body1">
+                        Хэтчбек 5 дв.
+                    </label>
+                </div>
+
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body2">
+                    <label class="form-check-label" for="body2">
+                        Хэтчбек 3 дв.
+                    </label>
+
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body3">
+                    <label class="form-check-label" for="body3">
+                        Хэтчбек 5 дв. citycarver
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body4">
+                    <label class="form-check-label" for="body4">
+                        Хэтчбек 5 дв. Sportback
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body5">
+                    <label class="form-check-label" for="body5">
+                        Лифтбек Sportback
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body6">
+                    <label class="form-check-label" for="body6">
+                        Лифтбек
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body7">
+                    <label class="form-check-label" for="body7">
+                        Внедорожник 5 дв.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body8">
+                    <label class="form-check-label" for="body8">
+                        Купе
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body9">
+                    <label class="form-check-label" for="body9">
+                        Кабриолет
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body10">
+                    <label class="form-check-label" for="body10">
+                        Седан Gran Coupe
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body11">
+                    <label class="form-check-label" for="body11">
+                        Седан
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body12">
+                    <label class="form-check-label" for="body12">
+                        Родстер
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body13">
+                    <label class="form-check-label" for="body13">
+                        Тарга
+                    </label>
+                </div>
+            </div>
+
+
+        </div>
+
         <div class="8th row">
             <div class="input-group ">
                 <div class="input-group-prepend">
