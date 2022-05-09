@@ -44,10 +44,7 @@
                 <div>Выберите модель автомобиля:
 
                 </div>
-
-
                 <select id="models" style="display:none" onclick="selectGen(this)" class="select">
-
                 </select>
             </div>
         </div>
@@ -65,7 +62,8 @@
 
 
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body1" checked>
+                    <input name="radioinput" class="form-check-input" type="radio" name="flexRadioDefault" id="body1"
+                        checked>
                     <label class="form-check-label" for="body1">
                         Хэтчбек 5 дв.
                     </label>
@@ -73,74 +71,74 @@
 
 
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body2">
+                    <input name="radioinput" class="form-check-input" type="radio" name="flexRadioDefault" id="body2">
                     <label class="form-check-label" for="body2">
                         Хэтчбек 3 дв.
                     </label>
 
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body3">
+                    <input name="radioinput" class="form-check-input" type="radio" name="flexRadioDefault" id="body3">
                     <label class="form-check-label" for="body3">
                         Хэтчбек 5 дв. citycarver
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body4">
+                    <input name="radioinput" class="form-check-input" type="radio" name="flexRadioDefault" id="body4">
                     <label class="form-check-label" for="body4">
                         Хэтчбек 5 дв. Sportback
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body5">
+                    <input name="radioinput" class="form-check-input" type="radio" name="flexRadioDefault" id="body5">
                     <label class="form-check-label" for="body5">
                         Лифтбек Sportback
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body6">
+                    <input name="radioinput" class="form-check-input" type="radio" name="flexRadioDefault" id="body6">
                     <label class="form-check-label" for="body6">
                         Лифтбек
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body7">
+                    <input name="radioinput" class="form-check-input" type="radio" name="flexRadioDefault" id="body7">
                     <label class="form-check-label" for="body7">
                         Внедорожник 5 дв.
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body8">
+                    <input name="radioinput" class="form-check-input" type="radio" name="flexRadioDefault" id="body8">
                     <label class="form-check-label" for="body8">
                         Купе
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body9">
+                    <input name="radioinput" class="form-check-input" type="radio" name="flexRadioDefault" id="body9">
                     <label class="form-check-label" for="body9">
                         Кабриолет
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body10">
+                    <input name="radioinput" class="form-check-input" type="radio" name="flexRadioDefault" id="body10">
                     <label class="form-check-label" for="body10">
                         Седан Gran Coupe
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body11">
+                    <input name="radioinput" class="form-check-input" type="radio" name="flexRadioDefault" id="body11">
                     <label class="form-check-label" for="body11">
                         Седан
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body12">
+                    <input name="radioinput" class="form-check-input" type="radio" name="flexRadioDefault" id="body12">
                     <label class="form-check-label" for="body12">
                         Родстер
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="body13">
+                    <input name="radioinput" class="form-check-input" type="radio" name="flexRadioDefault" id="body13">
                     <label class="form-check-label" for="body13">
                         Тарга
                     </label>
@@ -155,10 +153,10 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text">Укажите пробег</span>
                 </div>
-                <input type="text" class="form-control" name="input_text1" id="input_text1" max="200000" value="200000"
+                <input type="text" class="form-control" name="input_text1" id="input_text1" max="100000" value="100000"
                     onchange="rangeinput1.value = input_text1.value" />
                 <input type="range" oninput="input_text1.value = rangeinput1.value" class="form-control-range slider"
-                    type="range" min="5000" max="200000" value="200000" id="rangeinput1" step="5000"
+                    type="range" min="5000" max="100000" value="100000" id="rangeinput1" step="5000"
                     onchange="input_text1.value = rangeinput1.value" />
 
             </div>
