@@ -1,3 +1,4 @@
+yarn add gh-pages -dev
 const audiModels=["A1","S7","Q3","Q8","E-Tron"];
 const audiModelsValue = [1400000, 2500000, 1900000, 8000000, 9000000];
 const bmwModels=["BMW X1","BMW X7","BMW M6","BMW M8","BMW X2"];
@@ -128,22 +129,7 @@ function selectGen(sender){
 }
 
 function setPrice(){
-     /*let optionsString3 = '';
-   if (checkbrand == "audi") {
-        for (let i = 0; i < audiModels.length; i++) {
-            optionsString3 += `<option value=${audiModelsValue[i]}>${audiModels[i]}></option>`;
-        }        
-    }
-    if (checkbrand == "bmw") {
-        for (let i = 0; i < audiModels.length; i++) {
-            optionsString3 += `<option value=${audiModelsValue[i]}>${audiModels[i]}</option>`
-        }
-    }
-    if (checkbrand == "tesla") {
-        for (let i = 0; i < audiModels.length; i++) {
-            optionsString3 += `<option value=${audiModelsValue[i]}>${audiModels[i]}</option>`
-        }
-    }*/
+     
     let checkmodel=document.getElementById("models").value;
     let checkgen=document.getElementById("generations").value;
     let price=0;
