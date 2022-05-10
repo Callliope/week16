@@ -1,4 +1,4 @@
-yarn add gh-pages -dev
+
 const audiModels=["A1","S7","Q3","Q8","E-Tron"];
 const audiModelsValue = [1400000, 2500000, 1900000, 8000000, 9000000];
 const bmwModels=["BMW X1","BMW X7","BMW M6","BMW M8","BMW X2"];
