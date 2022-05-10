@@ -129,9 +129,35 @@ function selectGen(sender){
 var checkbrand=document.getElementById("brands").value;
 var checkmodel=document.getElementById("models").value;
 var checkgen=document.getElementById("generations").value;
-var checkrange=document.getElementById("rangeinput1").value;
-var checkbody=document.querySelector('input[name="radioinput"]:checked').value;
-let price=0;
-for (;;){
-    
-}
+
+
+
+
+function setPrice(){
+    let optionsString3 = '';
+    let checkbrand=document.getElementById("brands").value;
+    if (checkbrand == "audi") {
+        for (let i = 0; i < audiModels.length; i++) {
+            optionsString3 += `<option value=${audiModelsValue[i]}>${audiModels[i]}></option>`;
+            alert(optionsString3.value)
+        }
+        
+    }
+    if (checkbrand == "bmw") {
+        for (let i = 0; i < audiModels.length; i++) {
+            optionsString3 += `<option value=${audiModelsValue[i]}>${audiModels[i]}</option>`
+        }
+    }
+    if (checkbrand == "tesla") {
+        for (let i = 0; i < audiModels.length; i++) {
+            optionsString3 += `<option value=${audiModelsValue[i]}>${audiModels[i]}</option>`
+        }
+    }
+    var price;
+    var checkbody=document.querySelector('input[name="radioinput"]:checked').value;
+    var checkrange=document.getElementById("input_text1").value;
+    console.log(checkbody.value);
+    console.log(checkrange.value);
+    price=Number(optionsString3)+Number(checkbody)+Number(checkrange);
+    alert(price)
+    }
