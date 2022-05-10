@@ -126,22 +126,13 @@ function selectGen(sender){
     }
     document.getElementById("generations").innerHTML=optionString1
 }
-var checkbrand=document.getElementById("brands").value;
-var checkmodel=document.getElementById("models").value;
-var checkgen=document.getElementById("generations").value;
-
-
-
 
 function setPrice(){
-    let optionsString3 = '';
-    let checkbrand=document.getElementById("brands").value;
-    if (checkbrand == "audi") {
+     /*let optionsString3 = '';
+   if (checkbrand == "audi") {
         for (let i = 0; i < audiModels.length; i++) {
             optionsString3 += `<option value=${audiModelsValue[i]}>${audiModels[i]}></option>`;
-            alert(optionsString3.value)
-        }
-        
+        }        
     }
     if (checkbrand == "bmw") {
         for (let i = 0; i < audiModels.length; i++) {
@@ -152,12 +143,171 @@ function setPrice(){
         for (let i = 0; i < audiModels.length; i++) {
             optionsString3 += `<option value=${audiModelsValue[i]}>${audiModels[i]}</option>`
         }
-    }
-    var price;
+    }*/
+    let checkmodel=document.getElementById("models").value;
+    let checkgen=document.getElementById("generations").value;
+    let price=0;
     var checkbody=document.querySelector('input[name="radioinput"]:checked').value;
     var checkrange=document.getElementById("input_text1").value;
     console.log(checkbody.value);
     console.log(checkrange.value);
-    price=Number(optionsString3)+Number(checkbody)+Number(checkrange);
-    alert(price)
+    price=price+Number(checkbody);
+    function minusslider(){
+     price=price-(Number(checkrange)*3) ; 
     }
+    function addmodelvalue(){
+    if (checkmodel=="A1"){
+        price=price+audiModelsValue[0];
+    }
+    if (checkmodel=="S7"){
+        price=price+audiModelsValue[1];
+    }
+    if (checkmodel=="Q3"){
+        price=price+audiModelsValue[2];
+    }
+    if (checkmodel=="Q8"){
+        price=price+audiModelsValue[3];
+    }
+    if (checkmodel=="E-Tron"){
+        price=price+audiModelsValue[4];
+    }
+    if (checkmodel=="BMW X1"){
+        price=price+bmwModelsValue[0];
+    }
+    if (checkmodel=="BMW X7"){
+        price=price+bmwModelsValue[1];
+    }
+    if (checkmodel=="BMW M6"){
+        price=price+bmwModelsValue[2];
+    }
+    if (checkmodel=="BMW M8"){
+        price=price+audiModelsValue[3];
+    }
+    if (checkmodel=="BMW X2"){
+        price=price+audiModelsValue[4];
+    }
+    if (checkmodel=="Tesla Motors Model S"){
+        price=price+teslaModelsValue[0];
+    }
+    if (checkmodel=="Tesla Motors Model X"){
+        price=price+teslaModelsValue[1];
+    }
+    if (checkmodel=="Tesla Motors Model Y"){
+        price=price+teslaModelsValue[2];
+    }
+    if (checkmodel=="Tesla Motors Roadster"){
+        price=price+teslaModelsValue[3];
+    }
+    if (checkmodel=="Tesla Motors Model 3"){
+        price=price+teslaModelsValue[4];
+    }
+    }
+    function addgenvalue(){
+        if ((checkgen=="2010 – 2015")&(checkmodel="A1")){
+            price=price+A1Value[0];
+        }
+        if ((checkgen=="2014 – 2018")&(checkmodel="A1")){
+            price=price+A1Value[1];
+        }
+        if ((checkgen=="2018-н.в.")&(checkmodel="A1")){
+            price=price+A1Value[2];
+        }
+        if ((checkgen=="2012 – 2014")&(checkmodel="S7")){
+            price=price+S7Value[0];
+        }
+        if ((checkgen=="2014 – 2018")&(checkmodel="S7")){
+            price=price+S7Value[1];
+        }
+        if ((checkgen=="2019-н.в.")&(checkmodel="S7")){
+            price=price+S7Value[2];
+        }
+        if ((checkgen=="2011 – 2014")&(checkmodel="Q3")){
+            price=price+Q3Value[0];
+        }
+        if ((checkgen=="2014 – 2018")&(checkmodel="Q3")){
+            price=price+Q3Value[1];
+        }
+        if ((checkgen=="2018-н.в.")&(checkmodel="Q3")){
+            price=price+Q3Value[2];
+        }
+        if ((checkgen=="2018-н.в.")&(checkmodel="Q8")){
+            price=price+Q8Value[0];
+        }
+        if ((checkgen=="2018-н.в.")&(checkmodel="E-Tron")){
+            price=price+EtronValue[0];
+        }
+        if ((checkgen=="2009 – 2012")&(checkmodel="BMW X1")){
+            price=price+BmwX1Value[0];
+        }
+        if ((checkgen=="2012 – 2015")&(checkmodel="BMW X1")){
+            price=price+BmwX1Value[1];
+        }
+        if ((checkgen=="2015 – 2019")&(checkmodel="BMW X1")){
+            price=price+BmwX1Value[2];
+        }
+        if ((checkgen=="2019-н.в.")&(checkmodel="BMW X1")){
+            price=price+BmwX1Value[3];
+        }
+        if ((checkgen=="2019")&(checkmodel="BMW X7")){
+            price=price+BmwX7Value[0];
+        }
+        if ((checkgen=="2022-н.в.")&(checkmodel="BMW X7")){
+            price=price+BmwX7Value[1];
+        }
+        if ((checkgen=="1984 – 1989")&(checkmodel="BMW M6")){
+            price=price+BmwM6Value[0];
+        }
+        if ((checkgen=="2005 – 2010")&(checkmodel="BMW M6")){
+            price=price+BmwM6Value[1];
+        }
+        if ((checkgen=="2012 – 2018")&(checkmodel="BMW M6")){
+            price=price+BmwM6Value[2];
+        }
+        if ((checkgen=="2019")&(checkmodel="BMW M8")){
+            price=price+BmwM8Value[0];
+        }
+        if ((checkgen=="2022-н.в.")&(checkmodel="BMW M8")){
+            price=price+BmwM8Value[1];
+        }
+        if ((checkgen=="2017")&(checkmodel="BMW X2")){
+            price=price+BmwX2Value[0];
+        }
+        if ((checkgen=="2012 – 2016")&(checkmodel="Tesla Motors Model S")){
+            price=price+TeslaSValue[0];
+        }
+        if ((checkgen=="2016 – 2021")&(checkmodel="Tesla Motors Model S")){
+            price=price+TeslaSValue[1];
+        }
+        if ((checkgen=="2021-н.в.")&(checkmodel="Tesla Motors Model S")){
+            price=price+TeslaSValue[2];
+        }
+        if ((checkgen=="2015 – 2021")&(checkmodel="Tesla Motors Model X")){
+            price=price+TeslaXValue[0];
+        }
+        if ((checkgen=="2021-н.в.")&(checkmodel="Tesla Motors Model X")){
+            price=price+TeslaXValue[1];
+        }
+        if ((checkgen=="2020-н.в.")&(checkmodel="Tesla Motors Model Y")){
+            price=price+TeslaYValue[0];
+        }
+        if ((checkgen=="2008 – 2012")&(checkmodel="Tesla Motors Roadster")){
+            price=price+TeslaRoadsterValue[0];
+        }
+        if ((checkgen=="2017-н.в.")&(checkmodel="Tesla Motors Roadster")){
+            price=price+TeslaRoadsterValue[1];
+        }
+        if ((checkgen=="2008 – 2012")&(checkmodel="Tesla Motors Model 3")){
+            price=price+Tesla3Value[0];
+        }
+        if ((checkgen=="2017-н.в.")&(checkmodel="Tesla Motors Model 3")){
+            price=price+Tesla3Value[1];
+        }
+    }
+    
+    minusslider();
+    addmodelvalue();
+    addgenvalue();
+    document.getElementById('result_multi').innerHTML = price;
+    };
+
+   
